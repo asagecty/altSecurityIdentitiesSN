@@ -27,17 +27,17 @@ This script requires the following:
 
 Description of examples below:
     Example 1: Have script prompt for certificate file path
-    Example 2: Supply certificate file path in parameter
-    Example 3: Supply certificate file path in parameter and show both original and converted serial numbers
+    Example 2: Have script prompt for certificate file path and show both original and converted serial numbers
+    Example 3: Supply certificate file path in parameter
 
 .EXAMPLE
 PS> & '.\altSecurityIdentitiesSN.ps1'
 
 .EXAMPLE
-PS> & '.\altSecurityIdentitiesSN.ps1' -certPath "C:\certs\cert.crt"
+PS> & '.\altSecurityIdentitiesSN.ps1' -debug $true
 
 .EXAMPLE
-PS> & '.\altSecurityIdentitiesSN.ps1' -certPath "C:\certs\cert.crt" -debug $true
+PS> & '.\altSecurityIdentitiesSN.ps1' -certPath "C:\certs\cert.crt" 
 #>
 
 param ([System.String]$certPath,[System.Boolean]$debug)
