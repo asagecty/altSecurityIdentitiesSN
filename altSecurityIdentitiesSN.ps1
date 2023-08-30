@@ -4,7 +4,7 @@ Returns the certificate serial number in format for altSecurityIdentities.
 
 .DESCRIPTION
 This script accepts a certPath parameter for file location to the certificate.
-Script prompt for file path if not supplied.  The debug parameter can be set
+Script prompts for file path if not supplied.  The debug parameter can be set
 to $true to show original serial number and converted serial number.
 
 .PARAMETER certPath
